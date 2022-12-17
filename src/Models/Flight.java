@@ -1,70 +1,49 @@
 package Models;
 import java.util.Date;
+import java.util.Random;
 
 public class Flight{
-
-    private  int Flight_id;
-    protected String from_loc =" EGYPT --> ";
-    protected String to_loc ="Germany .";
-    protected Date Arrival_time;
-    protected String Duration ;
+    private int Flight_id;
+    private Date Arrival_time;
     protected  static  int total_seats;
-
-    public Flight(String from_loc, String to_loc) {
-        this.from_loc = from_loc;
-        this.to_loc = to_loc;
+    Random flightIdRandomizer = new Random();
+    private int flightIdBuilder() {
+        return  flightIdRandomizer.nextInt(1000,3000);
     }
-
-    public Flight(int flight_id) {
-
+    public void setFlight_id() {
+        Flight_id = flightIdBuilder();
     }
-
-    public void setFlight_id(int flight_id) {
-        Flight_id = flight_id;
-    }
-
-    public void setFrom_loc(String from_loc) {
-        this.from_loc = from_loc;
-    }
-
-    public void setTo_loc(String to_loc) {
-        this.to_loc = to_loc;
-    }
-
-    public void setArrival_time(Date arrival_time) {
-        Arrival_time = arrival_time;
-    }
-
-    public void setDuration(String duration) {
-        Duration = duration;
+    public int getFlight_id(){
+        return Flight_id;
     }
 
     public static void setTotal_seats(int total_seats) {
         Models.Flight.total_seats = total_seats;
     }
-
-    public int getFlight_id() {
-        return Flight_id;
+    public static int getTotal_seats() {
+        return total_seats;
     }
-
-    public String getFrom_loc() {
-        return from_loc;
+    public void setArrival_time(Date arrival_time) {
+        Arrival_time = arrival_time;
     }
-
-    public String getTo_loc() {
-        return to_loc;
-    }
-
     public Date getArrival_time() {
         return Arrival_time;
     }
 
-    public String getDuration() {
-        return Duration;
+    /*getters*/
+    public String getFrom_loc() {
+        return "EGYPT, CAIRO";
+    }
+    public String getAirLine() {
+        return "Egypt Air";
+    }
+    public String getTo_loc() {
+        return "GERMANY, BERLIN";
     }
 
-    public static int getTotal_seats() {
-        return total_seats;
+    public String getDuration() {
+        return "4h 15m";
     }
+
 
 }
