@@ -4,13 +4,13 @@ public class Passenger {
     //attributes
     private int profileId;
     private String mail;
-    private int phone;
+    private String phone;
     private String firstName;
     private String lastName;
     private String flightStatus ="Pending";
     //for all private attributes the getter will be assigned to a variable and wii be used with the query
     /*i.e. variable = getter function
-    * query("use the variable")*/
+    * query("use the<variable>")*/
     //getters
     public int getProfileId() {
         return profileId;
@@ -20,7 +20,7 @@ public class Passenger {
         return mail;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return phone;
     }
 
@@ -51,7 +51,7 @@ public class Passenger {
         this.mail = mail;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
@@ -62,8 +62,6 @@ public class Passenger {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
-
 
     public void setFlightStatus(String flightStatus) {
         this.flightStatus = flightStatus;
