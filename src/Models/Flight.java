@@ -1,10 +1,9 @@
 package Models;
-import java.util.Date;
 import java.util.Random;
 
 public class Flight{
     private int Flight_id;
-    private Date Arrival_time;
+
     protected  static  int total_seats;
     Random flightIdRandomizer = new Random();
     private int flightIdBuilder() {
@@ -22,12 +21,6 @@ public class Flight{
     }
     public static int getTotal_seats() {
         return total_seats;
-    }
-    public void setArrival_time(Date arrival_time) {
-        Arrival_time = arrival_time;
-    }
-    public Date getArrival_time() {
-        return Arrival_time;
     }
 
     /*getters*/
