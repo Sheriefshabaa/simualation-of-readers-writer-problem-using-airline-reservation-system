@@ -1,8 +1,5 @@
 package Controllers;
 import Models.*;
-
-import java.util.Calendar;
-import java.util.GregorianCalendar;
 import java.util.Random;
 
 public class TicketController extends Ticket implements Runnable {
@@ -15,6 +12,5 @@ public class TicketController extends Ticket implements Runnable {
 
     @Override
     public void run() {
-        Calendar calendar = new GregorianCalendar();
     }
 }
