@@ -2,7 +2,7 @@ package Controllers;
 import Models.*;
 import java.util.*;
 
-public class FlightController extends Flight implements Runnable {
+public class FlightController extends Flight{
     FlightDate thisFlight = new FlightDate();
     private int overFlowSeats;
     public int flightInfo(int totalSeatsForTheWholeFlight,int individualFlightCapacity){
@@ -15,8 +15,5 @@ public class FlightController extends Flight implements Runnable {
         return overFlowSeats;
     }
 
-    @Override
-    public void run() {
 
-    }
 }
