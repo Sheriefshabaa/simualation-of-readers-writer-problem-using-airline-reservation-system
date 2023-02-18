@@ -12,7 +12,7 @@ that gurantee to satisfy the 3 main testing approaches: ***Mutual-exclusion, Pro
 
 *the base solution and for more refrences we recommend to check the link below :*
 
--->[Reader and Writers problem/Geeks for Geeks](https://www.geeksforgeeks.org/readers-writers-problem-set-1-introduction-and-readers-preference-solution/) 
+-->[Geeks for Geeks/Reader and Writers problem](https://www.geeksforgeeks.org/readers-writers-problem-set-1-introduction-and-readers-preference-solution/) 
 
 *(this is the generic solution to avoid the conflict between our solution and the declared above and it tests differnt circumstences)*
 
@@ -35,7 +35,7 @@ pick data from the pre-defined data and create a single object refered to single
   - Passenger
   - Ticket
 2. Views
-  - Sadly we couldn't to develop a GUI for this project
+  - Sadly we couldn't develop a GUI for this project
 3. Controllers
   - FlightController
   - PassengerController
@@ -55,10 +55,25 @@ and for this we were always intializing 2 flights to save the (current flight) a
  ### 🔘 Randomizer
  The ***Randomizer*** one of the main components or i can say it's the ***Backbone*** of this project, it is the ***data generator*** and gurantee the variation of Agents/Writers Data the ***Randomizer*** was simulating the process of loginning, filling out the data and related stuff becuase we were out of data and we wanted to generate ours *randomly*
  
- ⚒️ ***Randomizer work idea*** : the ***Randomzier*** nothing more than method that manipulates a *Range of number or a fixed array* the array could represents the *pre-defined names or phone numbers* **(check out the ***Models*** package to get more infos.)** the range of numbers could be represented in **Ticket ID** we determined a specific range to our ***Tickets*** and the ***randomizer*** assign a ticket for each Client/Writer.
+  ***Randomizer work idea*** : the ***Randomzier*** nothing more than method that manipulates a *Range of number or a fixed array* the array could represents the *pre-defined names or phone numbers* **(check out the ***Models*** package to get more infos.)** the range of numbers could be represented in **Ticket ID** we determined a specific range to our ***Tickets*** and the ***randomizer*** assign a ticket for each Client/Writer.
  
  *(we solved the multiple assignment by increasing the range of ticket inclusion where the redundancy could be minimum as possible)*
  
+ ### 🔘 Semaphore
+ Semaphore is a well-known solution *(technique)* for solving concurrency related problems ***semaphore*** controlling the threads.
+ by organizing the access for multiple threads for a single resource ***(critcal section)*** by intializing the semaphore it requests a permit to access this ***critical section*** using two main methods : 
+ 1. **signal()** *(to notify the next thread that the current thread had left the ***critical section***)* 
+ 2. **wait()** *(to notify the next thread their is a currently using the critical section ***critical section***)*
+ 
+ in our problem representation we did the same thing to our reservee every Agent was entering the ***critical section*** was notifying all the waiting *threads* to wait using ***wait()*** function, when it leaves notify all the waiting *threads* using ***signal()***  to let a new thread comes in to the ***critical section*** 
+
+***Critical Section*** = **a reservation process for each reservee**
+
+*(to read mora about the ***Semaphore*** please check the link below)*
+ 
+ --> [Wikipedia/Semaphore in Programming](https://en.wikipedia.org/wiki/Semaphore_(programming))
+ 
+ ### Project 
  for next update
- + add the semaphores component
  + project expexted updates and falses.
+ + discuss the importance of choosing semaphore on synchronized method
