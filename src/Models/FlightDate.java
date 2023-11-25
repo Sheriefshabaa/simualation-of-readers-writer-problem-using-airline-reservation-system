@@ -3,7 +3,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class FlightDate {
-    SimpleDateFormat dateformat = new SimpleDateFormat();
+    SimpleDateFormat dateformatter = new SimpleDateFormat();
     Date thisDate = new Date();
     int dayOfFlight = 1;
     public void setThisDate() {
@@ -11,7 +11,7 @@ public class FlightDate {
     }
 
     public String getThisDate() {
-        return dateformat.format(thisDate);
+        return dateformatter.format(thisDate);
     }
 
 
