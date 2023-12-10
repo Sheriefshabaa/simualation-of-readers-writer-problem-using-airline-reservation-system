@@ -77,3 +77,5 @@ and for this we were always intializing 2 flights to save the (current flight) a
  for next update
  + project expexted updates and falses.
  + discuss the importance of choosing semaphore on synchronized method
+
+### project is going to be refactord and updated, the current version has a set of insufficiencies. We are Planning to slove.
