@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8639c06b-74ee-4eb5-aeee-6e529ccdd32a" name="Changes" comment="init">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Auxs/Randomizer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/FlightController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/FlightController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/PassengerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/PassengerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/TicketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/DBHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadersAndWriters/ReadersAndWriters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/Add_flight_panel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/Airlines.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/WhatsApp Image 2022-12-14 at 2.43.55 AM.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/banel2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/banel4.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,20 +48,12 @@
     &quot;author&quot;: &quot;Sheriefshabaa&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="recentNewPullRequestHead">
-      <RepoCoordinatesHolder>
-        <option name="owner" value="Sheriefshabaa" />
-        <option name="repository" value="OS-2_Project" />
-      </RepoCoordinatesHolder>
-    </option>
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="6eb35612-d7ab-4d24-a099-8dbaf33a2952" />
-        <option name="url" value="https://github.com/Sheriefshabaa/OS-2_Project.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Sheriefshabaa/OS-2_Project.git",
+    "accountId": "62cce7b0-caed-42aa-ac02-856d218d3395"
+  }
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -70,15 +65,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/sheri/IdeaProjects/test1&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "shereief's__branch",
+    "last_opened_file_path": "C:/Users/sheri/IdeaProjects/test1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -92,6 +92,14 @@
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
