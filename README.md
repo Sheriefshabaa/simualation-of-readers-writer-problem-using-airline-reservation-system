@@ -1,4 +1,4 @@
-# OS-2_Project - (Readers and Writers Problem)
+# Readers and Writers Problem solution using JAVA
 Os-2 project built to solve Readers&Writers Problem using Synchronization tools.
 in this project we were working on the "Readers and writers Problem" using a real-world application ***"An airline reservation system" using multithreaded approach***;
 that gurantee to satisfy the 3 main testing approaches: ***Mutual-exclusion, Progress and, bounding-waiting.***
