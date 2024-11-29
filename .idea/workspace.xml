@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8639c06b-74ee-4eb5-aeee-6e529ccdd32a" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/Auxs/Randomizer.java" afterDir="false" />
+    <list default="true" id="8639c06b-74ee-4eb5-aeee-6e529ccdd32a" name="Changes" comment="- re-correcting the structure of the application&#10;- create a package for auxiliary classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/DBHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReadersAndWriters/ReadersAndWriters.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/Add_flight_panel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/Airlines.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/WhatsApp Image 2022-12-14 at 2.43.55 AM.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/banel2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/banel4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OS2 DOCUMENTAION.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Os-2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating DB AIRLINE.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/os project schema.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/os relational schema.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Passenger.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +26,14 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;history&quot;: [
@@ -50,13 +49,16 @@
 }</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
-    "url": "https://github.com/Sheriefshabaa/OS-2_Project.git",
+    "url": "https://github.com/Sheriefshabaa/simualation-of-readers-writer-problem-using-airline-reservation-system.git",
     "accountId": "62cce7b0-caed-42aa-ac02-856d218d3395"
   }
 }]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
   <component name="ProjectId" id="2I36KOpGj2f4qvYEj2qFxSxJXm3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -67,16 +69,23 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "shereief's__branch",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/sheri/IdeaProjects/test1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
@@ -96,8 +105,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
       </set>
     </attachedChunks>
   </component>
@@ -109,6 +118,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669397854700</updated>
+      <workItem from="1732669090369" duration="1115000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1669398199197</created>
@@ -201,8 +211,19 @@
       <option name="project" value="LOCAL" />
       <updated>1671436971754</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="- re-correcting the structure of the application&#10;- create a package for auxiliary classes">
+      <option name="closed" value="true" />
+      <created>1732668421171</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1732668421171</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -217,7 +238,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="- re-correcting the structure of the application&#10;- create a package for auxiliary classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="- re-correcting the structure of the application&#10;- create a package for auxiliary classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
